@@ -1,5 +1,5 @@
-from aiogram import Bot,Dispatcher,executor
-from aiogram.types import Message
+from aiogram import Bot, Dispatcher
+import asyncio
 api='8229350603:AAG42YW2p5ypjaFkVwAHwSUsHBAfe7ZHexI'
 bot=Bot(api)
 dp=Dispatcher(bot)
@@ -37,8 +37,13 @@ async def qalaysan(message: Message):
     @dp.message_handler(lambda message: ' bot yaratyapmiz ' in message.text.lower())
     async def botyaratyapmiz(message : Message):
         await message.answer('Ha osson mikan')
+        
+async def main():
+await dp.start_polling(bot)
 
-executor.start_polling(dp, skip_updates=True)
+if name == "main":
+asyncio.run(main())
+
 
 
 
