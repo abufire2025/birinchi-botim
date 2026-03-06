@@ -38,7 +38,7 @@ async def qalaysan(message: Message):
     async def botyaratyapmiz(message : Message):
         await message.answer('Ha osson mikan')
 
-executor.start_polling(dp, skip_updates=True
+executor.start_polling(dp, skip_updates=True)
 
 
 
