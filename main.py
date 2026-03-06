@@ -1,6 +1,6 @@
 from aiogram import Bot,Dispatcher,executor
 from aiogram.types import Message
-api='8443933263:AAEaIpi8XKPhU-NKKmZPSHAhboTTZT_GORs'
+api='8229350603:AAG42YW2p5ypjaFkVwAHwSUsHBAfe7ZHexI'
 bot=Bot(api)
 dp=Dispatcher(bot)
 
@@ -38,8 +38,7 @@ async def qalaysan(message: Message):
     async def botyaratyapmiz(message : Message):
         await message.answer('Ha osson mikan')
 
-executor.start_polling(dp, skip_updates=True)
-
+executor.start_polling(dp, skip_updates=True
 
 
 
