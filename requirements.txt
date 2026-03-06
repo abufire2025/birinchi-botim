@@ -1,3 +1,1 @@
-Python 3
-pip install -r requirements.txt
-python main.py
+https://github.com/abufire2025/birinchi-botim/edit/main/requirements.txt
